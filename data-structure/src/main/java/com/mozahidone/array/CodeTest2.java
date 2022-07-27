@@ -8,7 +8,7 @@ public class CodeTest2 {
 
     public static void main(String[] args) {
         CodeTest2 codeTest2 = new CodeTest2();
-        System.out.println(codeTest2.firstNonRepatingCharacterHashMap("aabccbded"));
+        System.out.println(codeTest2.intArrayImplementation("aabccbded"));
     }
 
     private char firstNonRepatingCharacter(String s) {
@@ -42,4 +42,21 @@ public class CodeTest2 {
         }
         return '_';
     }
+
+    private char intArrayImplementation(String s) {
+        int[] intArray = new int[26];
+
+        for(int i=0; i<s.length(); i++) {
+            char c = s.charAt(i);
+            intArray[c-'a'] = intArray[c-'a'] + 1;
+        }
+
+        for(int i=0; i<s.length(); i++) {
+            char c = s.charAt(i);
+            if(intArray[c-'a'] == 1)
+                return c;
+        }
+        return '_';
+    }
+
 }
