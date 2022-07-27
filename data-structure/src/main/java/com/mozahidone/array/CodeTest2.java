@@ -8,7 +8,7 @@ public class CodeTest2 {
 
     public static void main(String[] args) {
         CodeTest2 codeTest2 = new CodeTest2();
-        System.out.println(codeTest2.intArrayImplementation("aabccbded"));
+        System.out.println(codeTest2.libraryFunctionImplementation("aabccbdedeg"));
     }
 
     private char firstNonRepatingCharacter(String s) {
@@ -54,6 +54,15 @@ public class CodeTest2 {
         for(int i=0; i<s.length(); i++) {
             char c = s.charAt(i);
             if(intArray[c-'a'] == 1)
+                return c;
+        }
+        return '_';
+    }
+
+    private char libraryFunctionImplementation(String s) {
+        for(int i=0; i<s.length(); i++) {
+            char c = s.charAt(i);
+            if(s.indexOf(c) == s.lastIndexOf(c))
                 return c;
         }
         return '_';
