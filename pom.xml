@@ -8,7 +8,6 @@
     <artifactId>dsa</artifactId>
     <version>0.0.1</version>
     <modules>
-        <module>datastructure</module>
         <module>algorithm</module>
         <module>data-structure</module>
     </modules>

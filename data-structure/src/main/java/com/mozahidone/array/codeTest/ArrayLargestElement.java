@@ -1,7 +1,7 @@
 package com.mozahidone.array.codeTest;
 
 // Finding the Largest Element in an Array
-public class Practice4 {
+public class ArrayLargestElement {
     public static void main(String[] args) {
         int[] numbers = {222,11,999,22,4,66,99};
         System.out.println(findLargestElement(numbers));

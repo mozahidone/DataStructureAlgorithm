@@ -1,13 +1,13 @@
-package com.mozahidone.array;
+package com.mozahidone.array.codeTest;
 
 // Find the first non repeating character
 
 import java.util.HashMap;
 
-public class CodeTest2 {
+public class FirstNonRepeatingCharater {
 
     public static void main(String[] args) {
-        CodeTest2 codeTest2 = new CodeTest2();
+        FirstNonRepeatingCharater codeTest2 = new FirstNonRepeatingCharater();
         System.out.println(codeTest2.libraryFunctionImplementation("aabccbdedeg"));
     }
 

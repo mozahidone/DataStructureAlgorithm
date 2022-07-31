@@ -1,8 +1,8 @@
-package com.mozahidone.array;
+package com.mozahidone.array.codeTest;
 
 // Find out smallest and largest number in a given array.
 
-public class CodeTest {
+public class ArrayLargestSmallest {
 
     public static void main(String[] args) {
         int[] nummbers = {10, 3, 22, 5, 99, 7};

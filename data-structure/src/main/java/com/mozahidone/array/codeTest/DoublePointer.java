@@ -3,7 +3,7 @@ package com.mozahidone.array.codeTest;
 import java.util.Arrays;
 
 // Reverse an array
-public class Practice5 {
+public class DoublePointer {
     public static void main(String[] args) {
         int[] numbers = {5,3,6,4,8,9};
         System.out.println(Arrays.toString(reverseArray(numbers)));
