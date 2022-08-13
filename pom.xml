@@ -10,6 +10,7 @@
     <modules>
         <module>algorithm</module>
         <module>data-structure</module>
+        <module>problem-solving</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -27,7 +28,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>18</java.version>
     </properties>
 
     <dependencies>
