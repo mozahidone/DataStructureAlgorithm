@@ -1,4 +1,4 @@
-package com.mozahidone.string;
+package com.mozahidone.string.problem;
 
 // How do you reverse a given string in place?
 public class ReverseString {
