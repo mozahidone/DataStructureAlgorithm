@@ -1,8 +1,8 @@
-package com.mozahidone.array.codeTest;
+package com.mozahidone.array.problem;
 
 import java.util.HashMap;
 
-public class ArrayLeastFrequentElement {
+public class LeastFrequentElement {
     //Least frequent element in an array
     public static void main(String[] args) {
         int[] numbers = {11,5,5,6,6,3,3};

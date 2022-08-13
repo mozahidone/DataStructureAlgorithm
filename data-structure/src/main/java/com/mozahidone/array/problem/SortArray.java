@@ -1,4 +1,4 @@
-package com.mozahidone.array.codeTest;
+package com.mozahidone.array.problem;
 
 public class SortArray {
 

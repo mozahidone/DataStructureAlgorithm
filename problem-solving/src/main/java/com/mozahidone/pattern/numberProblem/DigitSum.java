@@ -1,4 +1,4 @@
-package com.mozahidone.numberProblem;
+package com.mozahidone.pattern.numberProblem;
 
 public class DigitSum {
 

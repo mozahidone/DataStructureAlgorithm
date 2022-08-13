@@ -1,9 +1,9 @@
-package com.mozahidone.array.codeTest;
+package com.mozahidone.array.problem;
 
 import java.util.Arrays;
 
 // Reverse an array
-public class DoublePointer {
+public class ReverseArray {
     public static void main(String[] args) {
         int[] numbers = {5,3,6,4,8,9};
         System.out.println(Arrays.toString(reverseArray(numbers)));
