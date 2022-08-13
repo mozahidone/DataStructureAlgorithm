@@ -1,15 +1,5 @@
 package com.mozahidone.tree.problem;
 
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int data) {
-        this.data = data;
-        left = right = null;
-    }
-}
-
 public class BinaryTreeHeight {
     public static int height(Node root) {
         if(root == null)
