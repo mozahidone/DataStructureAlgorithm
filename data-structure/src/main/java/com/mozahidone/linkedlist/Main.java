@@ -14,6 +14,9 @@ public class Main {
         linkedList.removeFirst();
         linkedList.removeLast();
 
+        linkedList.pushNode(77);
+        linkedList.pushNode(12);
+
          linkedList.traverse();
     }
 }

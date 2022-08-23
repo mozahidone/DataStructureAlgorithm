@@ -26,6 +26,15 @@ public class LinkedList {
         }
     }
 
+    public void pushNode(int data) {
+        Node node = new Node(data);
+        if (first == null) {
+            first = node;
+        } else {
+            node.next = first;
+            first = node;
+        }
+    }
     public void addFirst(int item) {
         Node node = new Node(item);
 
@@ -38,9 +47,10 @@ public class LinkedList {
     }
 
     public void traverse() {
-        while (first!=null){
-            System.out.println(first.value);
-            first=first.next;
+        Node temp = first;
+        while (temp!=null){
+            System.out.println(temp.value);
+            temp=temp.next;
         }
     }
     public int indexOf(int value) {
@@ -89,5 +99,25 @@ public class LinkedList {
             current = current.next;
         }
         return null;
+    }
+
+    public int getLength() {
+        int length = 0;
+        Node temp = first;
+        while (temp != null) {
+            length++;
+            temp = temp.next;
+        }
+        return length;
+    }
+
+    public int getMiddleElement(int length) {
+        int midPosition = length/2;
+        Node temp = first;
+        while (midPosition > 0) {
+            midPosition--;
+            temp = temp.next;
+        }
+        return temp.value;
     }
 }
