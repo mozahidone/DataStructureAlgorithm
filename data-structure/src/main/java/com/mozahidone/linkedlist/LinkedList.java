@@ -37,6 +37,12 @@ public class LinkedList {
         }
     }
 
+    public void traverse() {
+        while (first!=null){
+            System.out.println(first.value);
+            first=first.next;
+        }
+    }
     public int indexOf(int value) {
         int index = 0;
         Node current = first;

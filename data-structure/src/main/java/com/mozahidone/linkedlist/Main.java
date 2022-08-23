@@ -13,5 +13,7 @@ public class Main {
 
         linkedList.removeFirst();
         linkedList.removeLast();
+
+         linkedList.traverse();
     }
 }
