@@ -1,4 +1,4 @@
-package com.mozahidone.pattern.stringProblem;
+package com.mozahidone.stack.problem;
 
 import java.util.Stack;
 
