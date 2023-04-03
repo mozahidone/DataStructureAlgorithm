@@ -7,12 +7,13 @@ public class StringProblem {
     public static void main(String[] args) {
         String s = "aabbbcdddef";
         System.out.println(firstNonRepeatingCharacter(s));
+
+        System.out.println(removeNonAlphabeticCharacters("@@This is a test string @1234*"));
     }
 
     /*
     Write a function to find the first occurrence of a non-repeating character in a given string.
      */
-
     public static Character firstNonRepeatingCharacter(String s) {
         Map<Character, Integer> charCount = new LinkedHashMap<>();
 
@@ -30,5 +31,13 @@ public class StringProblem {
                 return item.getKey();
         }
         return null;
+    }
+
+    /*
+    Write a function to remove all the non-alphabetic characters from a given string.
+     */
+
+    public static String removeNonAlphabeticCharacters(String s) {
+        return s.replaceAll("[^a-zA-Z]", "");
     }
 }
