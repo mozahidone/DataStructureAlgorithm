@@ -12,9 +12,11 @@ public class StringProblem {
 
         System.out.println(reverse("abcd"));
 
-        capitalizeFirstLetter("This is a hello text.");*/
-
+        capitalizeFirstLetter("This is a hello text.");
         System.out.println(maxOccurringCharacter("aabbbcdd"));
+        */
+
+        System.out.println(areAnagrams("listen", "silent"));
     }
 
     /*
@@ -99,5 +101,27 @@ public class StringProblem {
             }
         }
         return maxChar;
+    }
+
+    /*
+    Write a function to check if two given strings are anagrams.
+     */
+    public static boolean areAnagrams(String s1, String s2) {
+        if (s1.length() != s2.length())
+            return false;
+        int[] countChar = new int[256];
+
+        for (int i = 0; i < s1.length(); i++) {
+            char c = s1.charAt(i);
+            countChar[c]++;
+        }
+        for (int i = 0; i < s2.length(); i++) {
+            char c = s2.charAt(i);
+
+            if(countChar[c] == 0)
+                return false;
+            countChar[c]--;
+        }
+        return true;
     }
 }
