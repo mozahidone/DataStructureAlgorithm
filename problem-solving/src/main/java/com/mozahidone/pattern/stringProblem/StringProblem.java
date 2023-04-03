@@ -9,6 +9,8 @@ public class StringProblem {
         System.out.println(firstNonRepeatingCharacter(s));
 
         System.out.println(removeNonAlphabeticCharacters("@@This is a test string @1234*"));
+
+        System.out.println(reverse("abcd"));
     }
 
     /*
@@ -39,5 +41,17 @@ public class StringProblem {
 
     public static String removeNonAlphabeticCharacters(String s) {
         return s.replaceAll("[^a-zA-Z]", "");
+    }
+
+    /*
+    Write a function to reverse a given string
+     */
+    public static String reverse(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(s.length() -1 - i);
+            sb.append(c);
+        }
+        return sb.toString();
     }
 }
