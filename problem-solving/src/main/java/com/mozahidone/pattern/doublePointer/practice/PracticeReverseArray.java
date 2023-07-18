@@ -1,4 +1,4 @@
-package com.mozahidone.pattern.doublePointer;
+package com.mozahidone.pattern.doublePointer.practice;
 
 public class PracticeReverseArray {
 
